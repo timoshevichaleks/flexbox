@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+
+  color: $color-light;
+
+  font-family: $font-main;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+
+  color: $color-light;
+}
+
+h1 {
+  margin: 0;
+
+  letter-spacing: 0.12em;
+
+  font-family: $font-header;
+  font-size: 2.62rem;
+  font-weight: lighter;
+}
