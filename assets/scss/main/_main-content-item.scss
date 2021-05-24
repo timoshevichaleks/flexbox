@@ -1,0 +1,70 @@
+.main-content {
+  &__body {
+    display: flex;
+    /* перенос */
+    flex-wrap: wrap;
+  }
+  &-item {
+    position: relative;
+
+    overflow: hidden;
+    /* ширина 1 блока */
+    flex: 0 0 33.3333%;
+
+    padding: 7px;
+    &:hover {
+      .main-content-item__text {
+        transform: translateY(-80%);
+
+        background-color: rgba($color-dark, 0.7);
+      }
+      .main-content-item__title {
+        color: $color-accent;
+        background-color: rgba($color-dark, 0.7);
+      }
+    }
+    &__image {
+      position: relative;
+
+      max-width: 100%;
+
+      border: 4px solid red;
+      border-radius: 6px;
+    }
+    &__title {
+      position: absolute;
+      z-index: 1;
+      top: 10px;
+
+      display: none;
+
+      margin: 0;
+      padding: 7px;
+
+      letter-spacing: 0.07em;
+
+      border-radius: 6px 6px 0 0;
+      background-color: rgba($color-dark, 0.5);
+
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1em;
+
+      @include text-shortener;
+      @include text-shadow;
+    }
+    &__text {
+      position: absolute;
+
+      min-height: 100%;
+      margin: 0;
+      padding-top: 30px;
+
+      transition: transform 0.7s;
+      text-align: center;
+      // display: none;
+
+      @include block-with-text;
+    }
+  }
+}

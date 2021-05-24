@@ -24,6 +24,15 @@ a {
   color: $color-light;
 }
 
+.container {
+  display: flex;
+
+  max-width: xl;
+  margin: auto;
+  padding-right: $gap;
+  padding-left: $gap;
+}
+
 // h1 {
 //   margin: 0;
 //   font-family: $font-header;
