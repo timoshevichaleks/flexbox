@@ -2,7 +2,14 @@
   &-container {
     max-width: $xl;
     margin: auto;
-    padding-right: 30px;
-    padding-left: 30px;
+
+    @include lg-min {
+      padding-right: $gap;
+      padding-left: $gap;
+    }
+    @include lg {
+      padding-right: ($gap / 2);
+      padding-left: ($gap / 2);
+    }
   }
 }

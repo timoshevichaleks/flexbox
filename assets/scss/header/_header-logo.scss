@@ -4,24 +4,80 @@
     align-items: center;
     flex-direction: column;
 
-    padding-top: 45px;
-    padding-bottom: 47px;
-
     background-color: rgba($color-dark, 0.5);
+
+    @include sm-min {
+      padding: 45px 15px;
+    }
+    @include sm {
+      padding: 15px;
+    }
+    @include xs {
+    }
     &__img {
-      max-width: 400px;
-      margin-bottom: 26px;
+      display: block;
+
+      @include sm-min {
+        max-width: 400px;
+        margin-bottom: 30px;
+      }
+      @include sm {
+        max-width: 300px;
+        margin-bottom: 15px;
+      }
+      @include xx {
+        width: 80%;
+        margin-bottom: 15px;
+      }
     }
     &__title {
-      margin-bottom: 17px;
+      display: block;
+
+      margin: 0 0 15px 0;
 
       text-align: center;
+      letter-spacing: 0.12em;
+
+      font-family: $font-header;
+      font-weight: lighter;
+      font-weight: 300;
+
+      @include sm-min {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+      @include sm-xs {
+        letter-spacing: 0.18em;
+
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+      @include xs {
+        letter-spacing: 0.24em;
+
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
     }
     &__span {
-      letter-spacing: 0.2em;
+      display: block;
 
-      font-size: 0.875rem;
-      font-weight: bold;
+      text-align: center;
+
+      @include sm-min {
+        letter-spacing: 0.2em;
+
+        font-weight: bold;
+      }
+      @include sm {
+        letter-spacing: 0.1em;
+
+        font-size: 0.875rem;
+        line-height: 1.25em;
+      }
+      // @include xs {
+      //   letter-spacing: 0.1em;
+      // }
     }
   }
 }
