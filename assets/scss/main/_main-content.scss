@@ -2,4 +2,15 @@
   &__body {
     display: flex;
   }
+  &__title {
+    padding: 18px 12px;
+
+    letter-spacing: 0.11em;
+
+    border-radius: 6px;
+    background: linear-gradient(90deg, rgba($color-mustard-dark, 1) 40%, rgba($color-mustard-dark, 0) 100%);
+
+    font-family: $font-header;
+    font-weight: 300;
+  }
 }

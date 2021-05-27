@@ -636,15 +636,61 @@ a {
       -ms-flex-order: 2;
           order: 2;
   max-width: 1380px;
-  margin: auto;
   padding-right: 30px;
   padding-left: 30px;
+}
+
+.main-breadcrumb {
+  text-align: right;
+  padding: 8px 20px 8px 0;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(102, 80, 31, 0)), to(#2a2414));
+  background: -o-linear-gradient(left, rgba(102, 80, 31, 0) 0%, #2a2414 100%);
+  background: linear-gradient(90deg, rgba(102, 80, 31, 0) 0%, #2a2414 100%);
+}
+
+.main-breadcrumb span {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  letter-spacing: 0.12em;
+  -webkit-transition: color;
+  -o-transition: color;
+  transition: color;
+}
+
+.main-breadcrumb span:not(:last-of-type) {
+  padding-right: 8px;
+  font-weight: 900;
+}
+
+.main-breadcrumb span:last-of-type {
+  color: #cccccc;
+}
+
+.main-breadcrumb span a:hover, .main-breadcrumb span a:focus {
+  color: #e12727;
+  text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
 }
 
 .main-content__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.main-content__title {
+  padding: 18px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.11em;
+  font-family: "Lora", serif;
+  font-weight: 300;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #2a2414), to(rgba(42, 36, 20, 0)));
+  background: -o-linear-gradient(left, #2a2414 40%, rgba(42, 36, 20, 0) 100%);
+  background: linear-gradient(90deg, #2a2414 40%, rgba(42, 36, 20, 0) 100%);
 }
 
 .main-content__body {
@@ -677,7 +723,7 @@ a {
 .main-content-item__wrapper {
   position: relative;
   overflow: hidden;
-  border: 6px solid #66501f;
+  border: 5px solid #66501f;
   border-radius: 6px;
 }
 
@@ -694,14 +740,14 @@ a {
   height: 30px;
   margin: 0;
   padding: 7px;
+  -webkit-transition: background-color 0.4s;
+  -o-transition: background-color 0.4s;
+  transition: background-color 0.4s;
   letter-spacing: 0.04em;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 1rem;
   font-weight: 300;
   line-height: 1em;
-  -webkit-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
-  transition: background-color 0.4s;
   display: block;
   overflow: hidden;
   width: 100%;
