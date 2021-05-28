@@ -9,16 +9,16 @@
   <link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
-  <!-- <style>
-    body {
-      opacity: 90%;
+  <style>
+    /* body {
+      opacity: 0;
       background-color: #d8b036;
     }
     
     html {
       overflow: hidden;
-    }
-  </style> -->
+    } */
+  </style>
 </head>
 
 <body>
@@ -177,7 +177,38 @@
       </div>
     </main>
 
-    <aside class="left"></aside>
+    <aside class="left">
+      <div class="left-container">
+        <div class="left-search">
+          <h3 class="left__title">Поиск по сайту</h3>
+          <form class="left-search-form" action="#" method="get">
+            <input type="text" placeholder="Введите текст...">
+            <button class="button left-search--btn"></button>
+          </form>
+        </div>
+        <div class="left-categories">
+          <h3 class="left__title">Категории</h3>
+          <nav class="left-categories__nav">
+            <ul class="left-categories__list">
+              <li class="left-categories__item">HTML4/HTML5</li>
+              <li class="left-categories__item">CSS2/CSS3</li>
+              <li class="left-categories__item">Javascript/Jquery</li>
+              <li class="left-categories__item">PHP/MySQL</li>
+              <li class="left-categories__item">Less/Sass/Scss</li>
+              <li class="left-categories__item">Wordpress</li>
+              <li class="left-categories__item">Drupal</li>
+              <li class="left-categories__item">Bootstrap</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="left-description">
+          <h3 class="left__title">О шаблоне</h3>
+          <div class="left-description__text">
+            <p>Шаблон разработан для изучения адаптивной верстки на HTML5, оформления с помощью CSS3, подключения готовых библиотек и плагинов Jquery.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
 
     <aside class="right"></aside>
   </div>

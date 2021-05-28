@@ -1,24 +1,20 @@
 .main-breadcrumb {
-  margin-right: 10px;
   margin-bottom: 30px;
-  padding: 8px 20px 8px 0;
+  padding: 8px 12px;
 
   text-align: right;
+  letter-spacing: 2px;
 
-  border-radius: 6px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(90deg, rgba($color-mustard, 0) 0%, rgba($color-mustard-dark, 1) 100%);
+  border-radius: 7px;
+  background: linear-gradient(90deg, rgba($color-dark, 0) 0%, rgba($color-dark, 0.8) 100%);
   span {
+    margin-right: 7px;
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 5px;
 
     transition: color;
-    letter-spacing: 0.12em;
     &:not(:last-of-type) {
-      padding-right: 8px;
-
-      font-weight: 900;
+      font-weight: bold;
     }
     &:last-of-type {
       color: $color-gray;
@@ -31,5 +27,10 @@
         @include text-shadow;
       }
     }
+  }
+  .fas {
+    color: $color-gray;
+
+    font-weight: bold;
   }
 }
