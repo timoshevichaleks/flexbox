@@ -803,38 +803,6 @@ h3 {
   height: 100vh;
 }
 
-.left__title {
-  font-family: "Lora", serif;
-  font-weight: 300;
-  letter-spacing: 1.5px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-}
-
-.left-search {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 7px;
-  padding: 20px 15px;
-  margin-bottom: 15px;
-}
-
-.left-search-form {
-  margin-top: 10px;
-}
-
-.left-categories {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 7px;
-  padding: 15px 15px;
-  margin-bottom: 15px;
-}
-
-.left-description {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 7px;
-  padding: 15px 15px;
-}
-
 .right {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 240px;
@@ -844,6 +812,104 @@ h3 {
           order: 3;
   height: 100vh;
   background-color: green;
+}
+
+.widgets {
+  padding: 20px 15px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.widgets__title {
+  padding-bottom: 10px;
+  letter-spacing: 1.5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: "Lora", serif;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+.widgets-search {
+  margin-bottom: 15px;
+}
+
+.widgets-search-form {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.widgets-search-categories {
+  margin-bottom: 15px;
+  padding: 15px 15px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.widgets-search-description {
+  padding: 15px 15px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.widgets-search--input {
+  font-size: 0.85rem;
+  width: 100%;
+  color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.1);
+  border: 1px solid rgba(238, 238, 238, 0.15);
+  border-radius: 4px;
+  padding: 7px 0 7px 40px;
+}
+
+.widgets-search--input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.widgets-search--input::-moz-placeholder {
+  color: #cccccc;
+}
+
+.widgets-search--input:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.widgets-search--input::-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.widgets-search--input::placeholder {
+  color: #cccccc;
+}
+
+.widgets-search--input:focus {
+  outline: none;
+  background-color: rgba(238, 238, 238, 0.2);
+}
+
+.widgets-search--btn {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  padding: 4px 7px 6px 7px;
+  color: #eeeeee;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(238, 238, 238, 0.15);
+  cursor: pointer;
+}
+
+.widgets-categories {
+  margin-bottom: 15px;
+}
+
+.widgets-categories__list {
+  list-style: none;
+  padding: 0;
+}
+
+.widgets-categories__item {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
