@@ -1,6 +1,10 @@
 .right {
-  // background-color: green;
   overflow-x: hidden;
   flex: 0 0 #{$right-sidebar-width};
   order: 3;
+  &-widgets__title {
+    margin-bottom: 17px;
+
+    @include block-header;
+  }
 }

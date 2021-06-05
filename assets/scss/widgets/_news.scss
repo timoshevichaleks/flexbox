@@ -1,10 +1,55 @@
 .widgets-news {
-  &__text {
-    color: $color-gray;
+  padding-bottom: 24px;
+  &__wrapper {
+    padding-bottom: 8px;
+    &:hover,
+    &:focus {
+      background: radial-gradient(circle, rgba($color-dark, 0.5) 0%, rgba($color-dark, 0.25) 70%, rgba($color-dark, 0) 100%);
+      h4 {
+        transition: 0.6s;
 
-    line-height: 2em;
+        color: $color-accent;
+
+        @include text-shadow;
+      }
+      img {
+        transition: 0.6s;
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__title {
+    margin: 9px 0 10px 0;
+
+    letter-spacing: 0.07em;
+
+    font-weight: 300;
+
+    @include text-shortener;
+  }
+  &__image {
+    overflow: hidden;
+
+    min-width: 75px;
+    max-height: 75px;
+    margin-right: 10px;
+
+    border-radius: 4px;
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    }
+  }
+  &__block {
+    display: flex;
+
+    margin-bottom: -2px;
     p {
       margin: 0;
+
+      color: $color-gray;
+
+      @include block-with-text;
     }
   }
 }
