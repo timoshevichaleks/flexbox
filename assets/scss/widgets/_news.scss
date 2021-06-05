@@ -1,0 +1,10 @@
+.widgets-news {
+  &__text {
+    color: $color-gray;
+
+    line-height: 2em;
+    p {
+      margin: 0;
+    }
+  }
+}

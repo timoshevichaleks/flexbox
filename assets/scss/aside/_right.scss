@@ -1,8 +1,6 @@
 .right {
+  // background-color: green;
+  overflow-x: hidden;
   flex: 0 0 #{$right-sidebar-width};
   order: 3;
-
-  height: 100vh;
-
-  background-color: green;
 }

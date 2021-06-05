@@ -1,11 +1,28 @@
 .widgets-categories {
   margin-bottom: 15px;
   &__list {
+    margin: 0;
     padding: 0;
 
     list-style: none;
   }
   &__item {
-    margin-bottom: 10px;
+    padding: 5px 0;
+
+    border-radius: 4px;
+    &:focus,
+    &:hover {
+      background-color: rgba($color-dark, 0.5);
+      // transform: translateX(10px);
+      a {
+        padding-left: 10px;
+
+        transition: padding-left 0.5s;
+
+        color: $color-accent;
+
+        @include text-shadow;
+      }
+    }
   }
 }
