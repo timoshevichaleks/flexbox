@@ -1,7 +1,23 @@
 .right {
   overflow-x: hidden;
-  flex: 0 0 #{$right-sidebar-width};
   order: 3;
+
+  @include lg-min {
+    flex: 0 0 #{$right-sidebar-width};
+  }
+  @include lg-md {
+    flex: 0 0 100%;
+  }
+  @include md-xs {
+    flex: 0 0 50%;
+
+    padding-left: 7.5px;
+  }
+  @include xs {
+    flex: 0 0 100%;
+
+    padding-left: 0;
+  }
   &-widgets__title {
     margin-bottom: 17px;
 

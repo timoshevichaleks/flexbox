@@ -8,10 +8,18 @@
     margin-left: (-7.5px);
   }
   &-item {
-    /* ширина 1 блока */
-    flex: 0 0 33.3333%;
-
     padding: 7.5px;
+
+    @include sm-min {
+      /* ширина 1 блока */
+      flex: 0 0 33.3333%;
+    }
+    @include sm-xx {
+      flex: 0 0 50%;
+    }
+    @include xx {
+      flex: 0 0 100%;
+    }
     &:hover {
       .main-content-item__text {
         top: 30px;

@@ -5,6 +5,7 @@
 body {
   background-image: url(../img/global-bg.jpg);
   background-attachment: fixed; // фоновое изображение элемента неподвижным
+  background-position: top center;
   background-size: cover;
 }
 
@@ -26,18 +27,35 @@ a {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
 
   max-width: xl;
   margin: auto;
-  padding-right: $gap;
-  padding-left: $gap;
+
+  @include lg-min {
+    padding-right: $gap;
+    padding-left: $gap;
+  }
+  @include lg {
+    padding-right: ($gap / 2);
+    padding-left: ($gap / 2);
+  }
 }
 
 h1 {
   margin: 0;
 
-  font-size: 2rem;
   line-height: 1.5em;
+
+  @include sm-min {
+    font-size: 2rem;
+  }
+  @include sm-xs {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1rem;
+  }
 }
 
 h3 {
