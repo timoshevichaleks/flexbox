@@ -1,6 +1,4 @@
 .main {
-  max-width: $xl;
-
   @include lg-min {
     /* Ширина main контента */
     flex: 0 0 calc(100% - #{$left-sidebar-width} - #{$right-sidebar-width});
