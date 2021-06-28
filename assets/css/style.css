@@ -469,6 +469,10 @@ template {
 }
 
 body {
+  -webkit-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+  opacity: 1;
   background-image: url(../img/global-bg.jpg);
   background-attachment: fixed;
   background-position: top center;
